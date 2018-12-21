@@ -14,7 +14,7 @@ Para revisar el proceso de prototipado con mayor detalle, puedes acceder a este 
 
 Luego de analizar y probar nuestro prototipo de baja fidelidad, lo actualizamos lo suficiente como para generar nuestro prototipo de alta fidelidad v1 para desktop, tablet y smartphone.
 
-Puedes encontrar dicho prototipo en el siguente link: [prototipo-altafidelidad](https://www.figma.com/file/I69imcPpCebIgp8fvLJhOPJb/BuilderLab?node-id=0%3A1)
+Puedes encontrar dicho prototipo en el siguente link: [prototipo-altafidelidad](https://www.figma.com/file/I69imcPpCebIgp8fvLJhOPJb/BuilderLab?node-id=57%3A0)
 
 
 **Proximas actualizaciones**
@@ -23,5 +23,5 @@ Al momento de realizar los testeos con los usuarios pudimos notar ciertas caract
 
 Algunas de estas son:
 ..* La palabra "buscar" debe permitir la búsqueda en la web de la misma forma que el ícono <i>search</i>.
-..* Las builds más usadas y con mayor Win Rate deben estar en la pantalla principal de campeón, ya que el botón es confuso y hace más lenta la experiencia.
+..* Las builds más usadas y con mayor Win Rate deben estar en la pantalla principal de campeón, ya que el botón "Estadísiticas" es confuso y hace más lenta la experiencia.
 ..* Agregar botón para acceder a builds de jugadores profesionales.
