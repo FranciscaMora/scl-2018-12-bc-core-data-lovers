@@ -3,7 +3,7 @@
 **Necesidad de usuario**
 
 Para realizar este proyecto, entrevistamos a 5 usuarios entre 19 y 28 años que juegan League of Legends de forma regular y/o profesional para así poder definir cuál es su necesidad. 
-Lo que notamos fue que éstos buscan una plataforma a la que puedan ingresar en el tiempo limitado que tienen luego de elegir un campeón y entrar a la partida (3 a 5 minutos), donde puedan verificar las runas y builds  más efectivas  para ganar la partida, además de poder acceder de forma rápida al win rate respectivo y conocer a los jugadores profesionales.
+Lo que notamos fue que éstos buscan una plataforma a la que puedan ingresar en el tiempo limitado que tienen entre que escogen un campeón y entran a la partida (3 a 5 minutos), donde puedan verificar las runas y builds  más efectivas en el juego, además de poder acceder de forma rápida al win rate respectivo y conocer a las builds de los jugadores profesionales.
 
 Para revisar el proceso de prototipado con mayor detalle, puedes acceder a este link:
 ..* Historias de usuario.(https://docs.google.com/spreadsheets/d/1ghIdQSQJWXgKVh0uKRUTxx7Djq5TfWevz0DjtxhoZGU/edit?usp=sharing)
@@ -17,3 +17,11 @@ Luego de analizar y probar nuestro prototipo de baja fidelidad, lo actualizamos 
 Puedes encontrar dicho prototipo en el siguente link: [prototipo-altafidelidad](https://www.figma.com/file/I69imcPpCebIgp8fvLJhOPJb/BuilderLab?node-id=0%3A1)
 
 
+**Proximas actualizaciones**
+
+Al momento de realizar los testeos con los usuarios pudimos notar ciertas características que serán mejoradas para generar una mejor experiencia de usuario.
+
+Algunas de estas son:
+..* La palabra "buscar" debe permitir la búsqueda en la web de la misma forma que el ícono <i>search</i>.
+..* Las builds más usadas y con mayor Win Rate deben estar en la pantalla principal de campeón, ya que el botón es confuso y hace más lenta la experiencia.
+..* Agregar botón para acceder a builds de jugadores profesionales.
