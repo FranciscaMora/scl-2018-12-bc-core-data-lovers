@@ -25,3 +25,4 @@ Algunas de estas son:
 ..* La palabra "buscar" debe permitir la búsqueda en la web de la misma forma que el ícono <i>search</i>.
 ..* Las builds más usadas y con mayor Win Rate deben estar en la pantalla principal de campeón, ya que el botón "Estadísiticas" es confuso y hace más lenta la experiencia.
 ..* Agregar botón para acceder a builds de jugadores profesionales.
+..* Quitar pantalla de inicio en protitpos de Smartphone y Tablet. Según testeo de usuario, es una pantalla confusa e innecesaria.
