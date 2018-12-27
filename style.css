@@ -1,9 +1,7 @@
+*{
+    margin:0px;
+}
 body{
-    background-image:url("https://github.com/FranciscaMora/scl-2018-12-bc-core-data-lovers/blob/master/src/img/neekobackground.jpg?raw=true");
-    background-repeat:no-repeat;
-    -webkit-background-size:cover;
-    -moz-background-size:cover;
-    -o-background-size:cover;
-    background-size:cover;
-    background-position:center;
+    background-image:url("https://am-a.akamaihd.net/image?f=http://las.leagueoflegends.com/sites/default/files/upload/backgrounds/bg-rotator-homepage-neeko_v3.jpg");
+    
 }
