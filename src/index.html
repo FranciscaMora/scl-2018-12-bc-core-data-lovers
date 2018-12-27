@@ -11,16 +11,32 @@
 
 <body>
   <header>
-    <div>
-      <div class="container">
-        <button type="button" class="btn btn-primary" id="button_home">home</button>
-        <button type="button" class="button" id="button_filter">Filtrar</button>
-        <button type="button" class="button" id="button_sort">Ordenar por</button>
-        <button type="button" class="button" id="button_search">Buscar</button>
-
-        <input type="text" placeholder="Buscar" id="search_box">
-
+    <div class="container">
+      <div class="row">
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          Filtrar por
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#">Clase</a>
+          <a class="dropdown-item" href="#">Rol</a>
+          <a class="dropdown-item" href="#">Stats</a>
+        </div>
       </div>
+
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          Ordenar
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#">Alfabéticamente</a>
+          <a class="dropdown-item" href="#">Stats</a>
+          <a class="dropdown-item" href="#">Win rate</a>
+        </div>
+      </div>
+    </div>
     </div>
   </header>
 
@@ -29,21 +45,22 @@
       <img src="https://raw.githubusercontent.com/FranciscaMora/scl-2018-12-bc-core-data-lovers/master/src/img/lol.png"
         alt="logo_lol">
       <article class="col-xs-12 col-sm-8 col-md-9 col-lg-9">
-        <h2>¡Bienvenidos a BuilderLab!<span class="small">Aquí podrás conocer las runas y builds más usadas de tu campeón favorito</span></h2>
+        <h2>¡Bienvenidos a BuilderLab!<span class="small">Aquí podrás conocer las runas y builds más usadas de tu
+            campeón favorito</span></h2>
       </article>
       <aside class="col-xs-12 col-sm-4 col-md-3 col-lg3">
         <p>Sidebar</p>
       </aside>
     </section>
 
-   <div class="row">
-     <div class="color1 col-md-6">
+    <div class="row">
+      <div class="color1 col-md-6">
         <p>build</p>
-     </div>
-     <div class="col-md-6">
+      </div>
+      <div class="col-md-6">
         <p>build</p>
-     </div>
-   </div>
+      </div>
+    </div>
   </div>
   <footer>
     <div class="container">
