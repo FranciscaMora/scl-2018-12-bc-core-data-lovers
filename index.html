@@ -11,56 +11,65 @@
 
 <body>
   <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-dark">
-          <a class="navbar-brand" href="#"><img src="https://raw.githubusercontent.com/FranciscaMora/scl-2018-12-bc-core-data-lovers/master/src/img/icon-game-lol.png" alt=""></a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Dropdown
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </div>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" href="#">Disabled</a>
-              </li>
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
-          </div>
-        </nav>
-  </header>
+    <nav id="navbar" class="navbar navbar-expand-lg">
+      <a class="navbar-brand" href="#"><img src="https://raw.githubusercontent.com/FranciscaMora/scl-2018-12-bc-core-data-lovers/master/src/img/icon-game-lol.png"
+          alt=""></a>
+      <button id ="toggler" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-  <div class="container">
-    <section class="main row">
-      <img src="https://raw.githubusercontent.com/FranciscaMora/scl-2018-12-bc-core-data-lovers/master/src/img/lol.png"
-        alt="logo_lol">
-      <article class="col-xs-12 col-sm-8 col-md-9 col-lg-9">
-        <h2>¡Bienvenidos a BuilderLab!<span class="small">Aquí podrás conocer las runas y builds más usadas de tu
-            campeón favorito</span></h2>
-      </article>
-      <aside class="col-xs-12 col-sm-4 col-md-3 col-lg3">
-        <p>Sidebar</p>
-      </aside>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link dropdown-toggle" href="#" id="navbar-btn" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Ordenar
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Ascendente</a>
+              <a class="dropdown-item" href="#">Descendente</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Alfabéticamente</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbar-btn" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Filtrar
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Rol</a>
+              <a class="dropdown-item" href="#"></a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
+          <button id="btn-go" class="btn btn-outline-success my-2 my-sm-0" type="submit">Ir</button>
+        </form>
+      </div>
+    </nav>
+  </header>
+  <div id=main-screen>
+    <div class="container">
+      <section class="main row">
+        <img id="logo-lol" src="https://raw.githubusercontent.com/FranciscaMora/scl-2018-12-bc-core-data-lovers/master/src/img/lol.png"
+          alt="logo_lol">
+        <article id="article" class="col-xs-12 col-sm-8 col-md-9 col-lg-9">
+          <h2>¡Bienvenidos a BuilderLab!</h2>
+          <span class="small">Aquí podrás conocer las runas y builds <br>más usadas de tu
+            campeón favorito</span>
+        </article>
+
+    </div>
+    <aside class="col-xs-12 col-sm-4 col-md-3 col-lg3">
+      <p>Sidebar</p>
+    </aside>
     </section>
-    
+
 
     <div class="row">
       <div class="color1 col-md-6">
@@ -72,9 +81,7 @@
     </div>
   </div>
   <footer>
-    <div class="container">
-      <h3>Copyright</h3>
-    </div>
+    Lorena Miranda | Francisca Mora
   </footer>
 
   <div id="root"></div>
