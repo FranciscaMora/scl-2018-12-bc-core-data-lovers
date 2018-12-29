@@ -1,7 +1,61 @@
 *{
     margin:0px;
+    padding:0px;
 }
 body{
-    background-image:url("https://am-a.akamaihd.net/image?f=http://las.leagueoflegends.com/sites/default/files/upload/backgrounds/bg-rotator-homepage-neeko_v3.jpg");
+    background-image:url("https://raw.githubusercontent.com/FranciscaMora/scl-2018-12-bc-core-data-lovers/master/src/img/image2.jpeg");
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+
+p{
+    margin-bottom:20px;
+}
+
+#navbar-btn{
+    color:#937341;
     
+}
+
+#navbar{
+    border-bottom-style: groove;
+}
+
+#search{
+    margin-left: 0px;
+}
+
+#toggler{
+    color:#937341;
+}
+#btn-go{
+    border-color: #937341;
+    color: #937341;
+
+
+}
+
+#logo-lol{
+width: 300px;
+margin-top: 65px;
+}
+
+h2{
+    color:#f1e6d0;
+    font-size:25px;
+}
+
+.small{
+    font-size: 20px;
+    color: #937341;
+}
+
+#article{
+    margin-top:30px;
+}
+footer{
+    align-self: flex-end;
 }
