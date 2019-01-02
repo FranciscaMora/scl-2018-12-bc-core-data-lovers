@@ -9,36 +9,25 @@ body{
     background-attachment: fixed;
     background-size: cover;
     min-height:100vh;
-    
 }
-
 p{
     margin-bottom:20px;
 }
 
-#navbar-btn{
+.nav-wrapper{
+    background-color: black;
+}
+
+.img-logo{
+
+ width: 60px;
+    margin-top: 2px;
+}
+.nav-item{
     color:#937341;
-    
+    font-family: initial;
 }
 
-#navbar{
-    border-bottom-style: groove;
-    position: sticky;
-}
-
-#search{
-    margin-left: 0px;
-}
-
-#toggler{
-    color:#937341;
-}
-#btn-go{
-    border-color: #937341;
-    color: #937341;
-
-
-}
 
 #logo-lol{
 width: 300px;
@@ -52,7 +41,7 @@ h2{
 
 .small{
     font-size: 20px;
-    color: #937341;
+    
 }
 
 #article{
@@ -60,12 +49,11 @@ h2{
 }
 footer{
     background-color: rgba(120, 120, 120, .5);
-    position: absolute;
+    /*position: absolute;*/
     bottom: -20px;
     width: 100%;
     height: 40px;
     color: white;
     text-align: center;
-      }
 
 }
