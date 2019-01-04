@@ -1,33 +1,67 @@
-const arrayLOL= Object.values(LOL.data);
+window.lolData = {
+
+    filter: (data) => {
+
+        const result = data.LOL.filter(element => {
+
+            return element.type.indexOff(condition) !== -1;
+        })
+        return result
+    },
+
+    orderAZ: (data) => {
+        const resultOrden = data.LOL.sort((a, b) => {
+            if (a.name > b.name) {
+                return 1;
+            } if (a.name < b.name) {
+                return -1;
+            } return 0;
+        });
+        return resultOrden
+    },
+
+    orderZA: (data) => {
+        const resultOrden = data.LOL.sort((a, b) => {
+            if (a.name < b.name) {
+                return 1;
+            } if (a.name > b.name) {
+                return -1;
+            } return 0;
+        });
+        return resultOrden
+    }
+}
+
+
 /*Toma el id de los champ */
-const name =[];
-/*Toma la img de champ*/ 
-const icon=[];
+const name = [];
+/*Toma la img de champ*/
+const icon = [];
 /*Toma la biografia de champ */
-const biography=[];
+const biography = [];
 /*Toma el titulo de champ */
-const title=[];
+const title = [];
 /*Toma los tags */
-const tag=[];
+const tag = [];
 /*Toma los stats */
-const stats=[];
+const stats = [];
 /**toma la imagen y ubicación en html */
-const img=[];
+const img = [];
 /**Toma el splash para luego ubicarlo en background */
-const splash=[];
+const splash = [];
 /**crear funcion categoría */
-const categoría=[];
+const categoría = [];
 
 
 
 
-function filter (arrayLOL,condition){
+// function filter(arrayLOL, condition) {
 
-    const 
-    
-}),
+//     const
 
-arrayLOL.forEach(element =>{
+// }),
+
+arrayLOL.forEach(element => {
     name.push(element.id);
     icon.push(element.img);
     biography.push(element.blurb);
@@ -39,20 +73,20 @@ arrayLOL.forEach(element =>{
 });
 
 /**Toma el valor de armor de cada champ*/
-let armor=[];
+let armor = [];
 /**Toma el daño de ataque de cada champ */
-let attackDamage=[];
+let attackDamage = [];
 /**Toma el HP */
-let healPoints=[];
+let healPoints = [];
 /**Toma los mp */
-let magicPoints=[];
+let magicPoints = [];
 /**Toma la defenza mágica */
-let magicDefense=[];
+let magicDefense = [];
 /**Toma rango de ataque */
-let attackRange=[];
+let attackRange = [];
 
-let arrayStats= Object.values(stats);
-    arrayStats.forEach(element =>{
+let arrayStats = Object.values(stats);
+arrayStats.forEach(element => {
     armor.push(element.armor);
     attackDamage.push(element.attackdamage);
     healPoints.push(element.hp);
