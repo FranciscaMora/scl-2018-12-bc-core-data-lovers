@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-DOM
-=======
 window.onload=()=>{
     document.getElementById("champion-screen").style.display="none";
 
@@ -21,4 +18,3 @@ function runes(){
 //     var elems = document.querySelectorAll('.carousel');
 //     var instances = M.Carousel.init(Carousel, options);
 //   });
->>>>>>> FranMora/master
