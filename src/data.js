@@ -1,3 +1,38 @@
+window.lolData = {
+
+    filter: (data) => {
+
+        const result = data.LOL.filter(element => {
+
+        return element.type.indexOff(condition) !== -1;
+        })
+        return result
+    },
+
+    orderAZ: (data) => {
+        const resultOrden = data.LOL.sort((a, b) => {
+            if (a.name > b.name) {
+                return 1;
+            } if (a.name < b.name) {
+                return -1;
+            } return 0;
+            });
+                return resultOrden
+        },
+
+    orderZA: (data) => {
+        const resultOrden = data.LOL.sort((a, b) => {
+            if (a.name < b.name) {
+                return 1;
+            } if (a.name > b.name) {
+                return -1;
+            } return 0;
+            });
+                return resultOrden
+      }
+}
+
+
 /*Toma el id de los champ */
 let name =[];
 /*Toma la img de champ*/ 
