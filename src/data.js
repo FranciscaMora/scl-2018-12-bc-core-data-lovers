@@ -51,6 +51,7 @@ let arrayStats= Object.values(stats);
 
 });
 
+<<<<<<< HEAD
 const tag2 = tag.filter((element) => {
     return element
 })
@@ -82,3 +83,5 @@ const name2 = name.filter(string) => {
 }
 console.log(name2);
 */
+=======
+>>>>>>> FranMora/master
