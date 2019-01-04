@@ -1,3 +1,38 @@
+window.lolData = {
+
+    filter: (data) => {
+
+        const result = data.LOL.filter(element => {
+
+        return element.type.indexOff(condition) !== -1;
+        })
+        return result
+    },
+
+    orderAZ: (data) => {
+        const resultOrden = data.LOL.sort((a, b) => {
+            if (a.name > b.name) {
+                return 1;
+            } if (a.name < b.name) {
+                return -1;
+            } return 0;
+            });
+                return resultOrden
+        },
+
+    orderZA: (data) => {
+        const resultOrden = data.LOL.sort((a, b) => {
+            if (a.name < b.name) {
+                return 1;
+            } if (a.name > b.name) {
+                return -1;
+            } return 0;
+            });
+                return resultOrden
+      }
+}
+
+
 /*Toma el id de los champ */
 let name =[];
 /*Toma la img de champ*/ 
@@ -51,37 +86,3 @@ let arrayStats= Object.values(stats);
 
 });
 
-<<<<<<< HEAD
-const tag2 = tag.filter((element) => {
-    return element
-})
-console.log(tag2);
-
-
-const stats2 = stats.filter((element) => {
-    return element
-})
-console.log(stats2);
-
-
-
-
-// esta es una función de ejemplo
-// puedes ver como agregamos la función a nuestro objeto global window
-
-/*const example = () => {
-  return 'example';
-};
-
-window.example = example;
-*/
-
-/*const data = [1,5,23,4,12,45,78,8,10,11,84,6];
-
-const name2 = name.filter(string) => {
-
-}
-console.log(name2);
-*/
-=======
->>>>>>> FranMora/master
