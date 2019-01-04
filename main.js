@@ -12,6 +12,17 @@ function runes(){
 
 
 
+document.getElementById("az").addEventListener("click",(event) =>{
+    event.preventDefault();
+    alert("Holamundo");
+
+});
+
+
+
+
+
+
 // var instance = M.Carousel.getInstance(Carousel);
 // document.addEventListener('DOMContentLoaded', function() {
 //     var instance = M.Carousel.getInstance(Carousel);
