@@ -1,21 +1,32 @@
+const arrayLOL= Object.values(LOL.data);
 /*Toma el id de los champ */
-let name =[];
+const name =[];
 /*Toma la img de champ*/ 
-let icon=[];
+const icon=[];
 /*Toma la biografia de champ */
-let biography=[];
+const biography=[];
 /*Toma el titulo de champ */
-let title=[];
+const title=[];
 /*Toma los tags */
-let tag=[];
+const tag=[];
 /*Toma los stats */
-let stats=[];
+const stats=[];
 /**toma la imagen y ubicación en html */
-let img=[];
+const img=[];
 /**Toma el splash para luego ubicarlo en background */
-let splash=[];
+const splash=[];
+/**crear funcion categoría */
+const categoría=[];
 
-let arrayLOL= Object.values(LOL.data);
+
+
+
+function filter (arrayLOL,condition){
+
+    const 
+    
+}),
+
 arrayLOL.forEach(element =>{
     name.push(element.id);
     icon.push(element.img);
