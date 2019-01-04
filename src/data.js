@@ -50,3 +50,4 @@ let arrayStats= Object.values(stats);
     attackRange.push(element.attackrange);
 
 });
+
