@@ -5,18 +5,15 @@ window.onload=()=>{
   
 };
 
-function runes(){
+document.getElementById("runes").addEventListener("click",(evento)=>{
+    evento.preventDefault();
     document.getElementById("main-screen").style.display="none";
     document.getElementById("champion-screen").style.display="block";
-}
-
-
-
-document.getElementById("az").addEventListener("click",(event) =>{
-    event.preventDefault();
-    alert("Holamundo");
-
 });
+
+
+
+
 
 
 
