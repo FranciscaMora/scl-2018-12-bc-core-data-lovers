@@ -6,8 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="title" content="BuilderLab">
   <title>Data Lovers</title>
-  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -18,10 +18,10 @@
       <nav>
         <div class="nav-wrapper">
           <div class="row">
-            <a class="s12 m8 l4" onclick="home()"><img class="nav-logo" src="https://raw.githubusercontent.com/FranciscaMora/scl-2018-12-bc-core-data-lovers/master/src/img/icon2.jpg"
+            <a class="s8 m8 l4" id="home"><img class="nav-logo" src="https://raw.githubusercontent.com/FranciscaMora/scl-2018-12-bc-core-data-lovers/master/src/img/icon2.jpg"
                 alt="main-logo"></a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
-              <li><a class="col m2 l4" onclick="runes()">Runas</a></li>
+              <li><a class="col m2 l4" id="runes">Runas</a></li>
               <li><a class="col m2 l4" onclick="builds()">Builds</a></li>
               <li>
                 <div class="nav-wrapper">
@@ -42,46 +42,45 @@
   </header>
 
 
-  <section id="main-screen" class="row">
-    <!--Inicio aside página principal-->
-    <aside class="col xs12 s8 m9 l9">
-      <img id="logo-lol" src="https://raw.githubusercontent.com/FranciscaMora/scl-2018-12-bc-core-data-lovers/master/src/img/lol.png"
-        alt="logo_lol">
-      <h2>¡Bienvenidos a BuilderLab!</h2>
-      <span class="small">Aquí podrás conocer las runas y builds <br>más usadas de tu
-        campeón favorito</span>
-    </aside>
-    <!--Fin aside página principal-->
-    <button type="button" id="az">a-z</button>
-    <!--Inicio cuadro campeones página principal-->
-    <div id="root"></div>
-      
-    <!--Fin cuadro campeones página principal-->
-  </section>
-
-  <!--Inicio pantalla campeones-->
-  <section id="champion-screen">
+  <section id="main-screen">
+    <!--Inicio Logo y mensaje de bienvenida página principal-->
     <div class="container">
       <div class="row">
-        
-        <aside>
-          <!--Inicio card-->
-          <div class="card col s6 m4 l4">
-            <div class="card-image">
-              <img src="">
-              <span id="champ-name" class="card-title">""</span>
-            </div>
-            <div class="card-content">
-              <p>Stats</p>
-            </div>
-            <div class="card-action">
-              <a href="#">ProBuilds</a>
-            </div>
-          </div>
+        <img class="responsive-img col s12 m12 l12" id="logo-lol" src="https://raw.githubusercontent.com/FranciscaMora/scl-2018-12-bc-core-data-lovers/master/src/img/lol.png"
+          alt="logo_lol">
+        <h2 class="col s12 m12 l12">¡Bienvenidos a BuilderLab!</h2>
+        <span class="small col s12 m12 l12">Aquí podrás conocer las runas y builds <br>más usadas de tu
+          campeón favorito</span>
       </div>
     </div>
-    <!--Fin card-->
-    </aside> 
+    <!--Fin Logo y mensaje de bienvenida página principal-->
+
+
+
+    <!--Inicio cuadro campeones página principal-->
+    <div id="root">
+      <div class="container">
+        <div class="row">
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--Fin cuadro campeones página principal-->
+  <section>
+    <div id="champion-screen">
+      <div class="container">
+        <div class="row">
+          <section>
+            <blockquote class="l12 white-text z-depth-1">
+              Aatrox is a legendary warrior, one of only five that remain of an ancient race known as the Darkin. He
+              wields his massive blade with grace and poise, slicing through legions in a style that is hypnotic to
+              behold. With each foe felled, Aatrox's...
+            </blockquote>
+          </section>
+        </div>
+      </div>
+    </div>
   </section>
   <!--Fin pantalla campeones-->
   <div class="container"></div>
@@ -111,10 +110,11 @@
   </footer>
 
   <div id="root"></div>
-  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <script src="./data/lol/lol.js"></script>
   <script src="data.js"></script>
   <script src="main.js"></script>
+
 </body>
 
 </html>
