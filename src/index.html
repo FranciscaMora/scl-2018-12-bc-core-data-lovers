@@ -18,8 +18,7 @@
       <nav>
         <div class="nav-wrapper">
           <div class="row">
-            <a class="s8 m8 l4" id="home"><img class="nav-logo" src="https://raw.githubusercontent.com/FranciscaMora/scl-2018-12-bc-core-data-lovers/master/src/img/icon2.jpg"
-                alt="main-logo"></a>
+            <a class="s8 m8 l4" id="home"><img class="nav-logo" src="https://raw.githubusercontent.com/FranciscaMora/scl-2018-12-bc-core-data-lovers/master/src/img/icon2.jpg" alt="main-logo"></a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
               <li><a class="col m2 l4" id="runes">Runas</a></li>
               <li><a class="col m2 l4" onclick="builds()">Builds</a></li>
@@ -42,47 +41,88 @@
   </header>
 
 
-  <section id="main-screen">
+  
     <!--Inicio Logo y mensaje de bienvenida página principal-->
-    <div class="container">
+    <div  id="main-screen" class="container">
       <div class="row">
-        <img class="responsive-img col s12 m12 l12" id="logo-lol" src="https://raw.githubusercontent.com/FranciscaMora/scl-2018-12-bc-core-data-lovers/master/src/img/lol.png"
-          alt="logo_lol">
+        <img class="responsive-img col s12 m12 l12" id="logo-lol" src="https://raw.githubusercontent.com/FranciscaMora/scl-2018-12-bc-core-data-lovers/master/src/img/lol.png" alt="logo_lol">
         <h2 class="col s12 m12 l12">¡Bienvenidos a BuilderLab!</h2>
+<<<<<<< HEAD
         <span class="small col s12 m12 l12">Pincha la pantalla y podrás conocer las runas y builds <br>más usadas de tu
+=======
+        <span id="subtitle" class="small col s12 m12 l12">Aquí podrás conocer las runas y builds <br>más usadas de tu
+>>>>>>> FranMora/master
           campeón favorito</span>
       </div>
     </div>
     <!--Fin Logo y mensaje de bienvenida página principal-->
 
-
-
     <!--Inicio cuadro campeones página principal-->
-    <div id="root">
-      <div class="container">
-        <div class="row">
+    <div class="container">
+      <div class="row">
+        <div class="col s12 l2">
+          <label>Filtrar campeones por:</label>
+          <select id="selectTags" class="browser-default">
+            <option value="0" disabled selected>Elegir...</option>
+            <option value="Tank">Tank</option>
+            <option value="Assassin">Assassin</option>
+            <option value="Fighter">Fighter</option>
+            <option value="Support">Support</option>
+            <option value="Mage">Mage</option>
+            <option value="Marksman">Marksman</option>
+          </select>
+        </div>
 
+        <div class="btn-sort col s12 l2">
+          <label>Ordenar alfabéticamente:</label>
+          <select id="selectOrder" class="browser-default">
+            <option value="0" disabled selected>Elegir...</option>
+            <option value="Ascendente">Ascendente</option>
+            <option value="Descendente">Descendente</option>
+          </select>
         </div>
       </div>
     </div>
-  </section>
+
+    <div id="root" class="container row col s12 l2">
+    </div>
+
+
+
+
+
   <!--Fin cuadro campeones página principal-->
+
+  <!--Inicio pantalla runas-->
   <section>
-    <div id="champion-screen">
-      <div class="container">
-        <div class="row">
-          <section>
-            <blockquote class="l12 white-text z-depth-1">
-              Aatrox is a legendary warrior, one of only five that remain of an ancient race known as the Darkin. He
-              wields his massive blade with grace and poise, slicing through legions in a style that is hypnotic to
-              behold. With each foe felled, Aatrox's...
-            </blockquote>
-          </section>
+    <div id="runes-screen">
+      <div>
+        <div class="container">
+          <div class="row" id="root2">
+
+          </div>
         </div>
       </div>
     </div>
   </section>
-  <!--Fin pantalla campeones-->
+  <!--Fin pantalla runes-->
+
+  <!--Inicio pantalla runas de campeón-->
+  <section>
+    <div id="champ-runes">
+      <div>
+        <div class="container">
+          <div class="row" id="root3">
+cczxcczxcxz
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--Fin pantalla runas de campeón-->
+
+
+
   <div class="container"></div>
   <footer class="page-footer col s12">
     <div class="row">
