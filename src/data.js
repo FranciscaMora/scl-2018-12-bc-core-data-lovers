@@ -1,64 +1,15 @@
-
 const data=Object.values(LOL.data);
 
 function filter(data,condition){
-  const filtered = data.filter((elemento)=>{
+  const filtered=data.filter((elemento)=>{
   return elemento.tags.indexOf(condition)>=0;
   });
   console.log(filtered)
   return filtered;
 ;
 
-}
+};
 
-
-
-// const showData=(data)=>{
-//   let result='';
-//   // data.forEach(element => 
-//   data.forEach(element=>{
-//   for(let i=0;i<=element.lenght;i++){
-//     if(element.img !==''){
-//       result= containerRoot.innerHTML+=`<section class="container-fluid">
-//       <div class="card" >
-//           <div class="box">
-//               <div class="img">
-//                   <img src="${element.img}"> 
-//       </div>
-//                   <h2>${element.name}<br><span>${element.tags}</span></h2>
-//                       <p>${element.info}</p>
-//     </div>
-//               </div>
-// </section>`
-//     }
-    
-//   };
-//   console.log(showData);
-//   return result;
-// })
-// };
-
-
-// selectedTag.addEventListener('change',()=>{
-//   let condition = selectedTag.options[selectedTag.selectedIndex].text;
-//   let filtered= filteredTag(data,condition);
-//   containerRoot.innerHTML='';
-//   filtered.forEach(element=>{
-//     containerRoot.innerHTML+=`<section class="container-fluid">
-//     <div class="card" >
-//         <div class="box">
-//             <div class="img">
-//                 <img src="${element.img}"> 
-//     </div>
-//                 <h2>${element.name}<br><span>${element.tags}</span></h2>
-//                     <p>${element.info}</p>
-//   </div>
-//             </div>
-// </section>`
-//   })
-
-
-// })
 
 // window.onload=showData(data);
 
