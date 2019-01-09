@@ -1,14 +1,51 @@
-/*window.onload=()=>{
-    document.getElementById("champion-screen").style.display="none";
+
+window.onload=()=>{
+
+console.log(assassinTags[0].name);
+
+
+let arr = [];
+assassinTags.forEach((currentValue) => {
+return arr.push(currentValue + 1)    
+});
+}
+
+
+//para probar
+preview = function(id) {
+
+    // Abrir la Ventana donde Visualizar el Elemento:
+    const myWindow = window.open("", "", "width=800,height=600");
+   
+    // Obtengo el Elemento que quiero Visualizar:
+    const el = document.getElementById(id);
+   
+    // Despliego en la Ventana el Elemento a Visualizar:
+    myWindow.document.body.innerHTML=el.innerHTML;
+   }
+
+
+
+
+
+/*    document.getElementById("champion-screen").style.display="none";
 
 
   
 };
 
-function runes(){
+document.getElementById("runes").addEventListener("click",(evento)=>{
+    evento.preventDefault();
     document.getElementById("main-screen").style.display="none";
     document.getElementById("champion-screen").style.display="block";
-}
+});
+
+
+
+
+
+
+
 
 
 
@@ -75,3 +112,4 @@ arrayLOL.forEach(element =>{
 });
 
 */
+

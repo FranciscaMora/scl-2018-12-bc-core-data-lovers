@@ -1,51 +1,47 @@
-/*window.lolData = {
 
-    filter: (data) => {
+/**Inicio función filter */
 
-        const result = data.lol.filter(element => {
+// crea un array de objetos
+const dataLol = Object.values(LOL.data);
+               
+/**filtro por tags */
+//muestra todos los champ con el tag Tank
+const tankTags = dataLol.filter((element)=>{
+    return element.tags.indexOf("Tank")>=0});
+//muestra el name de los champ con tag Fighter
+const fighterTags = dataLol.filter((element)=>{
+    return element.tags.indexOf("Fighter")>=0});
+//muestra el name de los champ con tag Mage
+const mageTags = dataLol.filter((element)=>{
+    return element.tags.indexOf("Mage")>=0});
+//muestra el name de los champ con tag Assassin
+const assassinTags = dataLol.filter((element)=>{
+    return element.tags.indexOf("Assassin")>=0});
+//muestra el name de los champ con tag Support
+const supportTags = dataLol.filter((element)=>{
+    return element.tags.indexOf("Support")>=0});
+//muestra el name de los champ con tag Marksman
+const marksmanTags = dataLol.filter((element)=>{
+    return element.tags.indexOf("Marksman")>=0});
+/**Cierre función filter */
 
-        return element.tags.indexOf(condition) !== -1;
-        })
-        return result
-    },
 
-    orderAZ: (data) => {
-        const resultOrden = data.lol.sort((a, b) => {
-            if (a.name > b.name) {
-                return 1;
-            } if (a.name < b.name) {
-                return -1;
-            } return 0;
-            });
-                return resultOrden
-        },
 
-    orderZA: (data) => {
-        const resultOrden = data.lol.sort((a, b) => {
-            if (a.name < b.name) {
-                return 1;
-            } if (a.name > b.name) {
-                return -1;
-            } return 0;
-            });
-                return resultOrden
-      }
-}
-*/
+/**inicio función sort */
 
-const lolData = Object.values(LOL.data);
-const tag = [];
-const stats = [];
-const icon = [];
-const splash = [];
 
-function filter (lolData,condition) {
-   
 
-    const tag = lolData.filter(tags =>{
-     return tags.tag.indexOf(condition)!==-1;
-     });
-     console.log(tag)
-     return tag;
- 
- }
+
+
+// // muestra el name de  los champ con el  tag “Tank”
+// const champTags =dataLol.filter((elemento)=>{
+//     return elemento.tags.indexOf("Tank")>=0)
+// const tankChamps = champTags.reduce((acum,elemento)=>{return acum+" "+elemento.name},"")};
+
+// //muestra el name de los champ con tag "Fighter"
+// const fighterChamps0 = dataLol.filter((elemento)=>{return elemento.tags.indexOf("Fighter")>=0}); 
+// const fighterChamps = fighterChamps0.reduce((acum,elemento)=>{return acum+" "+elemento.name},""); 
+// }
+
+
+
