@@ -11,36 +11,36 @@ function filter(data, condition) {
 }
 
 
-// function sort(data, sortBy, sortOrder) {
-//   data.forEach(element => {
-//     let name = element[1].id;
-//     if (sortBy === 'id' && sortOrder === 'A-Z') {
-//       const sortByNameAz = element.sort((a, b) => {
-//         if (b.element[1].name > a.element[1].name) {
-//           return -1
-//         }
-//         if (a.element[1].name > b.element[1].name) {
-//           return 1;
-//         }
-//         return 0
-//       });
-//       return sortByNameAz
-//     }
-//     if (sortBy === 'id' && sortOrder === 'Z-A') {
-//       const sortByNameZa = element.sort((a, b) => {
-//         if (a.element[1].name > b.element[1].name) {
-//           return -1;
-//         }
-//         if (b.element[1].name > a.element[1].name) {
-//           return 1;
-//         }
-//         return 0;
-//       });
-//       return sortByNameZa;
-//     }
+function sort(data, sortBy, sortOrder) {
+  data.forEach(element => {
+    let name = element[1].id;
+    if (sortBy === 'id' && sortOrder === 'A-Z') {
+      const sortByNameAz = element.sort((a, b) => {
+        if (b.element[1].name > a.element[1].name) {
+          return -1
+        }
+        if (a.element[1].name > b.element[1].name) {
+          return 1;
+        }
+        return 0
+      });
+      return sortByNameAz
+    }
+    if (sortBy === 'id' && sortOrder === 'Z-A') {
+      const sortByNameZa = element.sort((a, b) => {
+        if (a.element[1].name > b.element[1].name) {
+          return -1;
+        }
+        if (b.element[1].name > a.element[1].name) {
+          return 1;
+        }
+        return 0;
+      });
+      return sortByNameZa;
+    }
 
-//   })
-// };
+  })
+};
 
 
 // function sortData(data, sortBy, sortOrder) {
