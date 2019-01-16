@@ -1,17 +1,21 @@
+document.addEventListener('DOMContentLoaded',function(){
+  window.M.AutoInit();
+});
+
+
 window.onload = () => {
   document.getElementById("runes-screen").style.display = "none";
-};
+
 // document.addEventListener('DOMContentLoaded', function () {
 //   M.AutoInit();
 // });
-const data1 = Object.entries(LOL.data);
 
-
+const dataLol= Object.entries(window.lol)
 const containerRoot = document.getElementById('root');
 /**Cambio de tag según valor select */
 document.getElementById('selectTags').addEventListener('change', () => {
   let rol = document.getElementById('selectTags').value;
-  let filtered = filter(data1, rol);
+  let filtered = window.data.filterData(dataLol, rol);
   containerRoot.innerHTML = '';
   filtered.forEach(element => {
     containerRoot.innerHTML += ` <div class="card small col s4 l3">
@@ -43,7 +47,7 @@ document.getElementById('runes').addEventListener('click', (evento) => {
   evento.preventDefault();
   document.getElementById('main-screen').style.display = 'none';
   document.getElementById('runes-screen').style.display = 'block';
-  data.forEach(element => {
+  dataLol.forEach(element => {
     containerRoot2.innerHTML += `
   
     <div id="champ-card"class="col s12 m2">
@@ -64,12 +68,10 @@ document.getElementById('runes').addEventListener('click', (evento) => {
 
 
 
-// manejo de función no completado, se espera su total funcionalidad para la versión 1.1
-
 document.getElementById('selectOrder').addEventListener('change', () => {
   let selectValue = document.getElementById('selectOrder').value;
   containerRoot.innerHTML = '';
-  let sortedByName = sort(data1, "name", selectValue);
+  let sortedByName = window.data.sortData(dataLol, 'name', selectValue);
   containerRoot.innerHTML = '';
   sortedByName.forEach(element => {
     containerRoot.innerHTML +=
@@ -83,7 +85,7 @@ document.getElementById('selectOrder').addEventListener('change', () => {
     </div>
     <div class="card-reveal">
       <span class="card-title grey-text text-darken-4">Stats<i class="material-icons right">close</i></span>
-      <p>Hp:${element[1].stats.hp}</p>
+      <p id="hpChamp">Hp:${element[1].stats.hp}</p>
     <p>Mp:${element[1].stats.mp}</p>
     <p>Defensa física:${element[1].stats.armor}</p>
     <p>Defensa mágica:${element[1].stats.spellblock}</p>
@@ -98,9 +100,7 @@ document.getElementById('selectOrder').addEventListener('change', () => {
 
 
 
-
-
-
+}
 
 
 

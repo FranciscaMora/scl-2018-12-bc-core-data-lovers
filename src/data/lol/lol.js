@@ -6971,3 +6971,5 @@ const LOL = {
     }
   }
 };
+
+window.lol=LOL.data;

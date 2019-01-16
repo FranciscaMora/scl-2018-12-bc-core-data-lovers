@@ -1,6 +1,7 @@
-const data = Object.entries(LOL.data);
+window.data={
 
-function filter(data, condition) {
+filterData:(dato, condition)=>{
+  const data = Object.entries(window.lol);
   const filtered = data.filter((element) => {
     return element[1].tags.indexOf(condition) >= 0;
   });
@@ -8,30 +9,27 @@ function filter(data, condition) {
   return filtered;
 
 
-}
+},
 
 
-function sort(data,sortBy,sortOrder){
-  if(sortOrder==='A-Z'){
-    const sortAZ=data.sort((elementA,elementB)=> 
-    elementA[1][sortBy].localeCompare(elementB[1][sortBy])
+sortData:(dataLol, sortBy, sortOrder)=>{
+  if (sortOrder === 'A-Z') {
+    const sortAZ = dataLol.sort((elementA, elementB) =>
+      elementA[1][sortBy].localeCompare(elementB[1][sortBy])
     )
     return sortAZ
   }
-  if (sortOrder==='Z-A'){
-    const sortZA=data.sort((elementA,elementB)=>
-    -elementA[1][sortBy].localeCompare(elementB[1][sortBy])
+  if (sortOrder === 'Z-A') {
+    const sortZA = dataLol.sort((elementA, elementB) =>
+      -elementA[1][sortBy].localeCompare(elementB[1][sortBy])
     )
     return sortZA
   }
-  return sort;
-};
+  
+}
 
-function computeStats(elementA,elementB){
-  for (let i = 0; i < data.length; i++) {
-    const dataLocation = data[i];
-    
-  }
+
+
 }
 
 
