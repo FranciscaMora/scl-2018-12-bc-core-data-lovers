@@ -1,12 +1,15 @@
+global.window=global;
+global.assert=require('chai').assert
 require('../src/data.js');
+require('../src/data/lol/lol.js');
 
 
-describe('example', () => {
-  it('is a function', () => {
-    expect(typeof example).toBe('function');
+describe('LOL', () => {
+  it('is an object', () => {
+    window.assert.equal(typeof window.lol,'object');
   });
 
-  it('returns `example`', () => {
-    expect(example()).toBe('example');
-  });
+  // it('returns `example`', () => {
+  //   expect(example()).toBe('example');
+  // });
 });
