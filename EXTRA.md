@@ -18,11 +18,11 @@ Luego de finalizar el desarrollo de la V1.0 de DataLovers, se  procedió a actua
 
 Este proyecto está dirigido a los(as) jugadores(as) de League of Legends que necesitan acceder a información sobre Builds y Runas de forma rápida antes de entrar a la partida, para así poder ganar y avanzar en la etapa clasificatoria. Además esta información debe ser clara, concisa y ordenada, ya que las plataformas con las que cuentan actualmente se encuentran saturadas de información y carecen de un orden definido.
 
-## NecesidadDeUsuario
+## Entrevistas y NecesidadDeUsuario
 
-Es complejo entregar una experiencia óptima en cualquier plataforma si no se tiene correctamente definidas las necesidades de usuario , es por eso que durante este sprint el enfoque estuvo en chequear y actualizar dichas necesidades, concluyendo en las siguientes:
+Es complejo entregar una experiencia óptima en cualquier plataforma si no se tiene correctamente definidas las necesidades de usuario , es por eso que durante este sprint el enfoque estuvo en chequear y actualizar dichas necesidades mediante entrevistas a usuarios reales que juegan regularmente,concluyendo en los siguientes resultados:
 
-**Un jugador de League of Legends necesita:**
+**Yo como jugador de League of Legends necesito:**
 
  - Decidir qué personaje usar para poder ganar la partida.
  - Acceder a la información de campeón de forma rápida para alcanzar a agregar los atributos antes de que comience la partida
@@ -41,13 +41,19 @@ Con estas historias se pudo definir cuáles son los puntos importantes a trabaja
  - Se necesita además un perfil de campeón que contenga de forma ordenada la información requerida por el usuario.
  - Reducir la información a sólo la estrictamente necesaria, para así evitar la saturación de la página y facilitar la lectura de dicha información.
 
+ ## Planificación
+
+Luego de redefenir las historias de usuario, como indica el método Scrum, se prepara una planificación en base a estas y a las definition of done creadas.Esta fue realizada a través de la plataforma Trello. Para chequearla accede al siguiente enlace:
+
+[Trello Extra](https://trello.com/b/FoyVgpMp/extra)
+
 ## UserPersona
 
 Luego de entrevistar a diversos usuarios:
 
 ![enter image description here](https://raw.githubusercontent.com/FranciscaMora/scl-2018-12-bc-core-data-lovers/master/Extra/Prototipado/WhatsApp%20Image%202019-01-21%20at%2005.52.23.jpeg)
 
- Se recopiló información y se organizó de tal forma que se pudiera crear un UserPersona que definiera y resumiera a nuestro usuario final de la siguiente manera:
+ Se recopiló información y se organizó de tal forma que se pudiera crear un UserPersona que definiera y resumiera a nuestro usuario final para poder organizar la información en la web de forma concreta y directa a los usuarios.Esto fue de la siguiente manera:
  
 
 ![User-persona](https://raw.githubusercontent.com/FranciscaMora/scl-2018-12-bc-core-data-lovers/master/Extra/Persona/UserPersona.jpeg) 
@@ -56,7 +62,7 @@ Con nuestra persona ya definida, podemos comenzar a actualizar WireFrame y Proto
 ## WireFrame y Prototipo de Alta fidelidad
 
 
-BuilderLab ya contaba anteriormente con su propio WireFrame y Prototipo de Alta Fidelidad, por lo que esto se trata de una actualización tomando encuentra los testeos de usuarios realizados anteriormente.
+BuilderLab ya contaba anteriormente con su propio WireFrame y Prototipo de Alta Fidelidad, por lo que esto se trata de una actualización tomando encuentra los testeos de usuarios realizados anteriormente, además de nuevas entrevistas y testeos con usuarios nuevos.
 
 ### WireFrame
 
@@ -87,14 +93,8 @@ Al  momento se testear esta interfaz se recibió suficiente información desde l
 
  - Los botones "build" y "runas" dentro del Navbar no llaman la atención de los usuarios por lo que raramente los clickean y , al momento de hacerlo, los envía a la misma información con un paso extra, lo que confunde y dificulta la experiencia por lo que se procede a quitar esta característica.
  - La información de los campeones, al ser mostrada en el tipo de tarjeta de la versión 1.0 , hace que su contenido se pierda y entregue una imagen saturada. Se decide cambiar la forma en la que se muestran los campeones, dejándolos en una caja principal donde su contenido varía según el filtro que aplique el usuario. Esta parte de la interfaz es la que más ha agradado a los usuarios, indicando que es un plus por sobre otras plataformas, ya que entrega el contenido de forma ordenada.
- 
- ## Heurísticas
 
-Se realizó una evaluación heurística a la  web, que puedes encontrar en el  siguiente link:
-
-[Evaluación Heurística](https://docs.google.com/spreadsheets/d/1nn9SdYgPrlYRw7_6BkLlmNnsvzn0sMbJdLbrYF-iRJ8/edit?usp=sharing)
-
-## Oportunidades de mejora
+ ## Oportunidades de mejora
 
 En las siguientes versiones se espera poder agregar/mejorar las siguientes características:
 
@@ -102,12 +102,17 @@ En las siguientes versiones se espera poder agregar/mejorar las siguientes carac
  - Agregar la función "ordenar" en cuadro de búsqueda.
  - Crear foro donde los usuarios puedan intercambiar información de sus atributos.
  - Mostrar ProBuilds.
+ - Agregar apartado "Preguntas frecuentes" y contacto en la web.
+ 
+ ## Heurísticas
 
-## Planificación
+Se realizó una evaluación heurística a la  web, que puedes encontrar en el  siguiente link:
 
-La planificación para este sprint fue realizada a través de la plataforma Trello. Para chequearla accede al siguiente enlace:
+[Evaluación Heurística](https://docs.google.com/spreadsheets/d/1nn9SdYgPrlYRw7_6BkLlmNnsvzn0sMbJdLbrYF-iRJ8/edit?usp=sharing)
 
-[Trello Extra](https://trello.com/b/FoyVgpMp/extra)
+
+
+
 
 ## Fuente
 
