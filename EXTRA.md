@@ -1,78 +1,121 @@
-# Data Lovers, viaje extendido
+# BuilderLab Extra UX
 
-![Travel pic](https://assets-auto.rbl.ms/5fefc7fee587f0e4aca6794810f346d3c555463eed4e21eaa015d6fc9e6bcb5d)
-[Fuente](https://www.theodysseyonline.com/road-trips-worthwhile)
+**Contenido:**
 
-## Resumen del proyecto
+ - [Introducción](#Introducción)
+ - [Necesidad de usuario](#NecesidadDeUsuario)
+ - [User Persona](#UserPersona)
+ - [Prototipo de Alta fidelidad](#Prototipo)
+ - [Test de usuario](#Testeo)
+ - [Evaluación Heurística](#Heurística)
+ - [Oportunidades de mejora](#Mejoras)
+ - [Planificación](#Planificación)
+ - [Fuentes](#Fuentes)
+ 
+## Introducción
 
-Después de unas semanas trabajando en el proyecto, queremos proponerte una
-_segunda parte_ que se adapte a tu proceso de aprendizaje **individual**.
-Esto permitirá que consolides, profundices y/o complementes lo aprendido.
+Luego de finalizar el desarrollo de la V1.0 de DataLovers, se  procedió a actualizar esta interfaz realizando test de usabilidad, evaluaciones heurísticas, iterando sobre el prototipo y definiendo oportunidades de mejora,  para así poder entregar una experiencia de usuario que satisfaga las necesidades y expectativas de este.
 
-Las alternativas son las siguientes:
+Este proyecto está dirigido a los(as) jugadores(as) de League of Legends que necesitan acceder a información sobre Builds y Runas de forma rápida antes de entrar a la partida, para así poder ganar y avanzar en la etapa clasificatoria. Además esta información debe ser clara, concisa y ordenada, ya que las plataformas con las que cuentan actualmente se encuentran saturadas de información y carecen de un orden definido.
 
-### 1. Si no terminaste la "Parte Obligatoria" del proyecto
+## NecesidadDeUsuario
 
-Pues termínala ¿no? No te olvides de que estás acá para aprender y no para
-simplemente "pasar" de un proyecto a otro y tener la ilusión de que aprendes.
-No estás compitiendo con nadie más que contigo misma.
+Es complejo entregar una experiencia óptima en cualquier plataforma si no se tiene correctamente definidas las necesidades de usuario , es por eso que durante este sprint el enfoque estuvo en chequear y actualizar dichas necesidades, concluyendo en las siguientes:
 
-Completa el proyecto original con todo lo que se especifica en
-la [parte obligatoria](README.md#parte-obligatoria).
+**Un jugador de League of Legends necesita:**
 
-### 2. Si completaste la "Parte Obligatoria"
+ - Decidir qué personaje usar para poder ganar la partida.
+ - Acceder a la información de campeón de forma rápida para alcanzar a agregar los atributos antes de que comience la partida
+ - Tener información detallada sobre runas para saber cuales usar exactamente y conocer sus características.
+ - Conocer las builds para el campeón elegido y así no escoger algún objeto que lo perjudique en la partida.
+ - Acceder a información clara y ordenada para agilizar la experiencia y no perder tiempo antes de entrar a partida.
+ - Saber contra qué campeón es fuerte o débil para armar una estrategia antes de jugar.
 
-Tienes estas opciones:
 
-2.1. Haz la "Parte Opcional" [(Hacker Edition)](README.md#parte-opcional-hacker-edition).
-Enfócate en los dos puntos principales: _cargar la data usando [`fetch`](https://developer.mozilla.org/es/docs/Web/API/Fetch_API)_
-y/o _agregar gráficas con [`Chart.js`](https://www.chartjs.org/)
-o [`Google Charts`](https://developers.google.com/chart/)_. Si ya hiciste esto,
-pasa a las siguientes opciones (obviamente).
+Con estas historias se pudo definir cuáles son los puntos importantes a trabajar, según las siguientes definitions of done:
 
-2.2. Si quieres explorar un poco más sobre el Diseño de Experiencia de Usuario
-(_UX Design_), te proponemos hacer sesiones de _testeo de usabilidad con
-usuarios_ y una evaluación heurística de tu sitio completo. Recuerda incorporar
-aprendizajes y oportunidades de mejora en tu _readme_. Haz una búsqueda de
-referentes de diseño visual para tu sitio que te sirvan de inspiración para
-resolver desafíos de interfaz. A partir de todos estos aprendizajes de
-usabilidad y diseño visual, trabaja en una iteración de la interfaz de tu sitio.
+ - Mostrar de forma clara la línea de cada campeón para que el usuario se conecte más rápido con la página y le sea más fácil encontrar la información que necesita.
+ - Utilizar íconos y colores ya familiares para el usuario, acelerando la experiencia tomando el cuenta el tiempo reducido con el que cuentan para entrar a partida.
+ - Es necesario crear un cuadro que muestre la información sobre builds más usadas, además de las de mayor win rate.
+ - Los campeones deben ser mostrados en la página principal para evitar la navegación en demsiadas pestañas.
+ - Se necesita además un perfil de campeón que contenga de forma ordenada la información requerida por el usuario.
+ - Reducir la información a sólo la estrictamente necesaria, para así evitar la saturación de la página y facilitar la lectura de dicha información.
 
-Así podrás, además, reforzar tus conocimientos sobre _heurísticas de usabilidad_
-y principios de diseño visual.
+## UserPersona
 
-2.3 Si quieres profundizar sobre lo ya aprendido de Front-end y codear
-un poco más, elige otra [fuente de datos](README.md#resumen-del-proyecto) para hacer
-otro "Producto". Por ejemplo, si hiciste una visualización con datos del
-Banco Mundial, puedes aplicar todo lo aprendido para, esta vez, hacer una
-sobre Pokémon.
+Luego de entrevistar a diversos usuarios:
 
-2.4 [Refactoriza](https://es.wikipedia.org/wiki/Refactorizaci%C3%B3n) tu código para aumentar
-la cobertura de _tests_ (incluyendo pruebas para componentes de interfaz).
+![enter image description here](https://raw.githubusercontent.com/FranciscaMora/scl-2018-12-bc-core-data-lovers/master/Extra/Prototipado/WhatsApp%20Image%202019-01-21%20at%2005.52.23.jpeg)
 
-## Consideraciones generales
+ Se recopiló información y se organizó de tal forma que se pudiera crear un UserPersona que definiera y resumiera a nuestro usuario final de la siguiente manera:
+ 
 
-- Esta segunda parte del proyecto es _individual_, salvo alguna excepción que
-  decida tu _Training Manager_.
+![User-persona](https://raw.githubusercontent.com/FranciscaMora/scl-2018-12-bc-core-data-lovers/master/Extra/Persona/UserPersona.jpeg) 
+Con nuestra persona ya definida, podemos comenzar a actualizar WireFrame y Prototipo de Alta Fidelidad.
 
-- Es responsabilidad de lxs _coaches_ y la _Training Manager_, después de las
-  entrevistas del final del proyecto original "Data Lovers", aconsejar y validar
-  qué opciones de todas las detalladas en este `README.md`, se adecúan más
-  a cada estudiante.
+## WireFrame y Prototipo de Alta fidelidad
 
-## Cómo empezar a trabajar en el proyecto
 
-Para actualizar tu fork/rama de este proyecto con este archivo (`EXTRA.md`),
-puedes hacer _pull_ de los cambios desde la rama `master` del remoto de
-`Laboratoria` con un comando como el siguiente:
+BuilderLab ya contaba anteriormente con su propio WireFrame y Prototipo de Alta Fidelidad, por lo que esto se trata de una actualización tomando encuentra los testeos de usuarios realizados anteriormente.
 
-```sh
-git pull <repo-url> <branch>
-```
+### WireFrame
 
-Por ejemplo, si el repo de tu cohort es
-`https://github.com/Laboratoria/lim-2018-11-bc-core-am-data-lovers.git`:
+![WireFrame](https://raw.githubusercontent.com/FranciscaMora/scl-2018-12-bc-core-data-lovers/master/Extra/Prototipado/WhatsApp%20Image%202019-01-21%20at%2005.52.02.jpeg)
+### Prototipo de  Alta Fidelidad
 
-```sh
-git pull https://github.com/Laboratoria/lim-2018-11-bc-core-am-data-lovers.git master
-```
+Para realizar este prototipo se trabajó con iteraciones diarias hasta llegar a las versión 1.1 de BuilderLab:
+
+[Prototipo de AltaFidelidad Figma Bruto](https://www.figma.com/file/Cyb1EJ2kNHWuUV8jIVGIOH5I/Untitled?node-id=0:1)
+
+[Prototipo AF Figma con funcionalidad](https://www.figma.com/proto/Cyb1EJ2kNHWuUV8jIVGIOH5I/Untitled?node-id=0:1&scaling=min-zoom)
+
+El cual fue aceptado por usuario, quien vio cubierta sus principales preocupaciones (según sus propias palabras) :
+
+ - No ocupa mucho espacio para entregar información.
+ - Es claramente legible.
+ - Es directo y para nada confuso.
+ - Colores e imágenes acorde a la temática.
+
+## Testeo de usuarios
+
+![test](https://raw.githubusercontent.com/FranciscaMora/scl-2018-12-bc-core-data-lovers/master/Extra/Testeo%20de%20%20usuario/Testeo%20de%20usuario.jpg)
+
+Al  momento se testear esta interfaz se recibió suficiente información desde los usuarios, lo que permitió iterar diariamente para corregir y/o agregar los atributos necesarios.
+ 
+ Luego de dichos testeos se pudo recopilar la siguiente información:
+ 
+
+ - Los botones "build" y "runas" dentro del Navbar no llaman la atención de los usuarios por lo que raramente los clickean y , al momento de hacerlo, los envía a la misma información con un paso extra, lo que confunde y dificulta la experiencia por lo que se procede a quitar esta característica.
+ - La información de los campeones, al ser mostrada en el tipo de tarjeta de la versión 1.0 , hace que su contenido se pierda y entregue una imagen saturada. Se decide cambiar la forma en la que se muestran los campeones, dejándolos en una caja principal donde su contenido varía según el filtro que aplique el usuario. Esta parte de la interfaz es la que más ha agradado a los usuarios, indicando que es un plus por sobre otras plataformas, ya que entrega el contenido de forma ordenada.
+ 
+ ## Heurísticas
+
+Se realizó una evaluación heurística a la  web, que puedes encontrar en el  siguiente link:
+
+[Evaluación Heurística](https://docs.google.com/spreadsheets/d/1nn9SdYgPrlYRw7_6BkLlmNnsvzn0sMbJdLbrYF-iRJ8/edit?usp=sharing)
+
+## Oportunidades de mejora
+
+En las siguientes versiones se espera poder agregar/mejorar las siguientes características:
+
+ - Apartado de counters, donde el usuario puede conocer qué campeones son fuertes y cuáles son débiles frente al personaje elegido.
+ - Agregar la función "ordenar" en cuadro de búsqueda.
+ - Crear foro donde los usuarios puedan intercambiar información de sus atributos.
+ - Mostrar ProBuilds.
+
+## Planificación
+
+La planificación para este sprint fue realizada a través de la plataforma Trello. Para chequearla accede al siguiente enlace:
+
+[Trello Extra](https://trello.com/b/FoyVgpMp/extra)
+
+## Fuente
+
+Para definir colores,  imágenes, órden visual, etc, fue necesario estudiar las plataformas existentes, además de comprender realmente a los usuarios. 
+Algunas de dichas plataformas fueron:
+
+[Mobafire](https://www.mobafire.com/)
+[ChampionGG](https://champion.gg/)
+[LeagueofLegends.com](https://las.leagueoflegends.com/es/)
+
+
